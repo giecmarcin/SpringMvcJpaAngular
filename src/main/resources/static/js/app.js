@@ -1,2 +1,2 @@
 // Define the `phonecatApp` module
-angular.module('userApp', ['ngResource']);
+var App = angular.module('userApp', ['ngResource']);

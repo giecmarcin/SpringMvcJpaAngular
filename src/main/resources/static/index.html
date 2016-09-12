@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html ng-app="userApp">
 <head>
     <meta charset="utf-8">
     <title>Spring boot and Angularjs Tutorial</title>
@@ -9,15 +9,19 @@
     <script src="/webjars/angularjs/1.5.8/angular-resource.js"></script>
     <script src="/webjars/angularjs/1.5.8/angular-route.js"></script>
     <script src="/js/app.js"></script>
-    <script src="/js/controller.js"></script>
+    <script src="/js/user-list.component.js"></script>
+    <script src="/js/user-form.component.js"></script>
+    <script src="/js/contact-form.component.js"></script>
+    <script src="/js/user.service.js"></script>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.css">
 </head>
 
 <body>
 
-
-
-<p>1 + 2 = {{1 + 2}}</p>
+<!-- Use a custom component to render a list of phones -->
+<user-form></user-form>
+<br/><user-list></user-list>
 
 </body>
+
 </html>
