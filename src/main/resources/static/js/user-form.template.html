@@ -6,16 +6,20 @@
         </div>
         <div class="form-group">
             <label for="FirstName">Name:</label>
-            <input type="text" class="form-control" id="FirstName">
+            <input type="text" class="form-control" id="FirstName" ng-model="firstName">
         </div>
 
         <div class="form-group">
             <label for="Lastname">Lastname:</label>
-            <input type="text" class="form-control" id="Lastname">
+            <input type="text" class="form-control" id="Lastname" ng-model="lastname">
         </div>
         <br/>
         <br/>
+
+        <button type="button" class="btn btn-default" ng-click="showData()">Data</button>
         <button type="button" class="btn btn-default" ng-click="addContact()">Add contact</button>
+
+
 
         <div ng-repeat="c in contacts">
             <contact-form></contact-form>
